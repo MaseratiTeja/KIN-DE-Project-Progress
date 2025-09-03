@@ -152,13 +152,13 @@
         }
 
         .sub-project-row td {
-            padding: 12px 15px;
+            padding: 12px 15px 12px 15px;
         }
 
-        .sub-project-name {
+        .sub-project-row .sub-project-name {
             color: #6b7280;
             font-size: 14px;
-            padding-left: 50px;
+            padding-left: 70px;
             position: relative;
         }
 
@@ -336,77 +336,17 @@
                         <td>
                             <div class="progress-container">
                                 <div class="progress-bar">
-                                    <div class="progress-fill progress-99" style="width: 99%"></div>
+                                    <div class="progress-fill progress-100" style="width: 100%"></div>
                                 </div>
-                                <div class="progress-text">99%</div>
+                                <div class="progress-text">100%</div>
                             </div>
                         </td>
                         <td class="date">15-Aug-25</td>
-                        <td class="comments">cannot do aggregation (max, min) on summary table</td>
-                    </tr>
-                    
-                    <tr class="project-row main-project no-subs" data-project="sac-sharepart">
-                        <td class="project-name-cell">
-                            <div class="project-name">
-                                <span class="expand-icon">▶</span>
-                                SAC Spare Part Safety Stock Report Dev
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-85" style="width: 85%"></div>
-                                </div>
-                                <div class="progress-text">85%</div>
-                            </div>
-                        </td>
-                        <td class="date">29-Aug-25</td>
                         <td class="comments">
-                            <span class="status-badge status-in-progress">Finishing Steps</span>
+                            <span class="status-badge status-complete">Complete</span>
                         </td>
                     </tr>
-                    
-                    <tr class="project-row main-project no-subs" data-project="sac-freight">
-                        <td class="project-name-cell">
-                            <div class="project-name">
-                                <span class="expand-icon">▶</span>
-                                SAC Freight Order Report Dev
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-0" style="width: 0%"></div>
-                                </div>
-                                <div class="progress-text">0%</div>
-                            </div>
-                        </td>
-                        <td class="date">29-Aug-25</td>
-                        <td class="comments">will start this week after SO Pipeline</td>
-                    </tr>
-                    
-                    <tr class="project-row main-project no-subs" data-project="sac-purchase">
-                        <td class="project-name-cell">
-                            <div class="project-name">
-                                <span class="expand-icon">▶</span>
-                                SAC Purchase KPI Report Dev
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-80" style="width: 95%"></div>
-                                </div>
-                                <div class="progress-text">80%</div>
-                            </div>
-                        </td>
-                        <td class="date">22-Aug-25</td>
-                        <td class="comments">SAC Modeler Error on consuming the custom cds</td>
-                    </tr>
-                    
+
                     <tr class="project-row main-project no-subs" data-project="so-workflow">
                         <td class="project-name-cell">
                             <div class="project-name">
@@ -429,6 +369,48 @@
                         </td>
                     </tr>
                     
+                    <tr class="project-row main-project no-subs" data-project="sac-wht">
+                        <td class="project-name-cell">
+                            <div class="project-name">
+                                <span class="expand-icon">▶</span>
+                                SAC WHT Report CR 
+                            </div>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-100" style="width: 100%"></div>
+                                </div>
+                                <div class="progress-text">100%</div>
+                            </div>
+                        </td>
+                        <td class="date">2-Sep-25</td>
+                        <td class="comments">
+                            <span class="status-badge status-complete">COMPLETE</span>
+                        </td>
+                    </tr>
+                    
+                    <tr class="project-row main-project no-subs" data-project="sac-purchase">
+                        <td class="project-name-cell">
+                            <div class="project-name">
+                                <span class="expand-icon">▶</span>
+                                SAC Purchase KPI Report Dev
+                            </div>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-99" style="width: 99%"></div>
+                                </div>
+                                <div class="progress-text">99%</div>
+                            </div>
+                        </td>
+                        <td class="date">9-Sep-25</td>
+                        <td class="comments">no suitable field found for PR Approval & Approval Date yet</td>
+                    </tr>                    
+
                     <tr class="project-row main-project" data-project="so-pipeline" onclick="toggleSubProjects('so-pipeline')">
                         <td class="project-name-cell">
                             <div class="project-name">
@@ -445,104 +427,149 @@
                                 <div class="progress-text calculated-progress">80%</div>
                             </div>
                         </td>
-                        <td class="date">2-Sep-25</td>
+                        <td class="date">9-Sep-25</td>
                         <td class="comments">
-                            <span class="status-badge status-in-progress">In Progress</span>
+                            <span class="status-badge status-in-progress">Mappings still on progress</span>
                         </td>
+                    </tr>
+                    
+                    <tr>
+                        <tbody class="sub-projects" id="sub-so-pipeline">
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">master uom input & output creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-100" style="width: 100%"></div>
+                                        </div>
+                                        <div class="progress-text">100%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">new master store input & output creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-100" style="width: 100%"></div>
+                                        </div>
+                                        <div class="progress-text">100%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">new master item input & output creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-100" style="width: 100%"></div>
+                                        </div>
+                                        <div class="progress-text">100%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">new python script creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-100" style="width: 100%"></div>
+                                        </div>
+                                        <div class="progress-text">100%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">distributor mappings creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-25" style="width: 25%"></div>
+                                        </div>
+                                        <div class="progress-text">15%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            
+                            <tr class="sub-project-row">
+                                <td class="sub-project-name">new so transaction output creation</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="progress-container sub-project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill progress-100" style="width: 100%"></div>
+                                        </div>
+                                        <div class="progress-text">100%</div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </tr>
+
+                    <tr class="project-row main-project no-subs" data-project="sac-sharepart">
+                        <td class="project-name-cell">
+                            <div class="project-name">
+                                <span class="expand-icon">▶</span>
+                                SAC Spare Part Safety Stock Report Dev
+                            </div>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-85" style="width: 85%"></div>
+                                </div>
+                                <div class="progress-text">85%</div>
+                            </div>
+                        </td>
+                        <td class="date">10-Sep-25</td>
+                        <td class="comments">
+                            <span class="status-badge status-in-progress">Delayed due to modeler sensitivity error</span>
+                        </td>
+                    </tr>
+                    
+                    <tr class="project-row main-project no-subs" data-project="sac-freight">
+                        <td class="project-name-cell">
+                            <div class="project-name">
+                                <span class="expand-icon">▶</span>
+                                SAC Freight Order Report Dev
+                            </div>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-0" style="width: 0%"></div>
+                                </div>
+                                <div class="progress-text">0%</div>
+                            </div>
+                        </td>
+                        <td class="date">15-Sep-25</td>
+                        <td class="comments">Delayed due to other request and sac modeler sensitivity error</td>
                     </tr>
                 </tbody>
-                
-                <tbody class="sub-projects" id="sub-so-pipeline">
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">master uom input & output creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-100" style="width: 100%"></div>
-                                </div>
-                                <div class="progress-text">100%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">new master store input & output creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-100" style="width: 100%"></div>
-                                </div>
-                                <div class="progress-text">100%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">new master item input & output creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-100" style="width: 100%"></div>
-                                </div>
-                                <div class="progress-text">100%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">new python script creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-75" style="width: 75%"></div>
-                                </div>
-                                <div class="progress-text">70%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">distributor mappings creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-25" style="width: 25%"></div>
-                                </div>
-                                <div class="progress-text">10%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    
-                    <tr class="sub-project-row">
-                        <td class="sub-project-name">new so transaction output creation</td>
-                        <td>-</td>
-                        <td>
-                            <div class="progress-container sub-project-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill progress-100" style="width: 100%"></div>
-                                </div>
-                                <div class="progress-text">100%</div>
-                            </div>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
+
             </table>
         </div>
     </div>
